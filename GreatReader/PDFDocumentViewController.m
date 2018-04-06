@@ -146,7 +146,7 @@ static NSString * const PDFDocumentViewControllerSegueSearch = @"PDFDocumentView
 
     [self prepareToolbar];    
     [self prepareInfoView];
-    [self goAtIndex:self.document.currentPage addHistory:NO animated:NO];
+    [self goAtIndex:1 addHistory:NO animated:NO]; //goAtIndex:self.document.currentPage //RESET THIS TO REMEMBER HISTORY
 }
 
 #pragma mark -

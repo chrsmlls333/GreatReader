@@ -85,7 +85,7 @@ static NSString * const LastAppVersion = @"LastAppVersion";
 
 - (BOOL)application:(UIApplication *)application shouldSaveApplicationState:(NSCoder *)coder
 {
-    return YES;
+    return NO; //YES
 }
 
 - (UIViewController *)application:(UIApplication *)application
