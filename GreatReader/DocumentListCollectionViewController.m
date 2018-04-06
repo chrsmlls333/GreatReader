@@ -195,14 +195,14 @@ didHighlightItemAtIndexPath:(NSIndexPath *)indexPath
                   layout:(UICollectionViewLayout*)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return IsPad() ? CGSizeMake(180, 230) : CGSizeMake(100, 140);
+    return IsPad() ? CGSizeMake(360, 400) : CGSizeMake(100, 140); //180:230 , 100:140
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView
                    layout:(UICollectionViewLayout*)collectionViewLayout
 minimumLineSpacingForSectionAtIndex:(NSInteger)section
 {
-    return IsPad() ? 20 : 10;
+    return IsPad() ? 10 : 10; //20:10
 }
 
 - (CGFloat)collectionView:(UICollectionView *)collectionView
@@ -216,7 +216,8 @@ minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
                         layout:(UICollectionViewLayout*)collectionViewLayout
         insetForSectionAtIndex:(NSInteger)section
 {
-    return IsPad() ? UIEdgeInsetsMake(40, 20, 40, 20) : UIEdgeInsetsMake(20, 10, 20, 10);
+//    return IsPad() ? UIEdgeInsetsMake(40, 20, 40, 20) : UIEdgeInsetsMake(20, 10, 20, 10);
+    return IsPad() ? UIEdgeInsetsMake(20, 20, 20, 20) : UIEdgeInsetsMake(20, 10, 20, 10); //edited
 }
 
 

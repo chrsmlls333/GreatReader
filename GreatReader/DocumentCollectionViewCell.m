@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 MIYAMOTO Shohei. All rights reserved.
 //
 
+#import "QuartzCore/CALayer.h" //new
+
 #import "DocumentCollectionViewCell.h"
 
 #import <KVOController/FBKVOController.h>
@@ -25,8 +27,18 @@
 - (void)awakeFromNib
 {
     CGFloat scale = [UIScreen mainScreen].scale;
-    self.imageView.layer.borderWidth = 1.0 / scale;
-    self.imageView.layer.borderColor = UIColor.blackColor.CGColor;
+    
+    //self.imageView.layer.borderWidth = 1.0 / scale;
+    //self.imageView.layer.borderColor = UIColor.blackColor.CGColor;
+
+    
+    self.imageView.layer.shadowColor = [UIColor blackColor].CGColor; //
+    self.imageView.layer.shadowOffset = CGSizeMake(0, 1); //
+    self.imageView.layer.shadowOpacity = 0.85; //
+    self.imageView.layer.shadowRadius = 3.0; //
+    //self.imageView.layer.shouldRasterize = YES; //
+    self.imageView.clipsToBounds = NO; //
+    
     self.selectionView.hidden = !self.selected;
     self.selectionView.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.5];
     self.selectionView.layer.borderWidth = 1.0 / scale;
@@ -82,7 +94,7 @@
                                 floorf(frame.size.height / scale));
     }
     frame.origin = CGPointMake(self.frame.size.width / 2 - frame.size.width / 2,
-                               self.frame.size.width - frame.size.height);
+                               self.frame.size.height / 2 - frame.size.height / 2);
     self.imageView.frame = frame;
     self.selectionView.frame = frame;
 }

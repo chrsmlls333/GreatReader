@@ -231,7 +231,7 @@ NSString * const PDFDocumentDeletedNotification = @"PDFDocumentDeletedNotificati
 - (UIImage *)makeThumbnailImage
 {
     PDFPage *page = [self pageAtIndex:1];
-    CGFloat width = IsPad() ? 180 : 100;
+    CGFloat width = IsPad() ? 360 : 100; // 180:100
 
     CGRect pageRect = page.rect;
     CGFloat ratio = pageRect.size.height / pageRect.size.width;
