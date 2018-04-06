@@ -48,13 +48,27 @@
     self.sliderCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                              reuseIdentifier:nil]; {
         self.sliderCell.selectionStyle = UITableViewCellSelectionStyleNone;
+//        UISlider *slider = [[UISlider alloc] initWithFrame:({
+//            CGRect f = self.sliderCell.contentView.bounds;
+//            f.origin.x = 20;
+//            f.size.width -= (CGRectGetMinX(f) * 2);
+//            f;
+//        })];
+//        slider.value = self.document.brightness;
+//        [slider addTarget:self
+//                   action:@selector(sliderChanged:)
+//         forControlEvents:UIControlEventValueChanged];
+//        slider.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        
         UISlider *slider = [[UISlider alloc] initWithFrame:({
             CGRect f = self.sliderCell.contentView.bounds;
             f.origin.x = 20;
             f.size.width -= (CGRectGetMinX(f) * 2);
             f;
         })];
-        slider.value = self.document.brightness;
+        slider.minimumValue = 0.f;
+        slider.maximumValue = 1.0f;
+        slider.value = [[UIScreen mainScreen] brightness];
         [slider addTarget:self
                    action:@selector(sliderChanged:)
          forControlEvents:UIControlEventValueChanged];
@@ -71,7 +85,8 @@
 
 - (void)sliderChanged:(UISlider *)slider
 {
-    self.document.brightness = slider.value;
+    //self.document.brightness = slider.value;
+    [[UIScreen mainScreen] setBrightness:slider.value];
 }
 
 - (void)cropEnabledSwitchChanged:(UISwitch *)sw
