@@ -26,12 +26,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.collectionView.allowsMultipleSelection = YES;
+//    self.collectionView.allowsMultipleSelection = YES;
 
-    UILongPressGestureRecognizer *rec =
-            [[UILongPressGestureRecognizer alloc] initWithTarget:self
-                                                          action:@selector(longPressed:)];
-    [self.collectionView addGestureRecognizer:rec];
+//    UILongPressGestureRecognizer *rec =
+//            [[UILongPressGestureRecognizer alloc] initWithTarget:self
+//                                                          action:@selector(longPressed:)];
+//    [self.collectionView addGestureRecognizer:rec];
 }
 
 #pragma mark -

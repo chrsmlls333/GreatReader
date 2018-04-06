@@ -55,6 +55,9 @@ static NSString * const LastAppVersion = @"LastAppVersion";
 
     UITabBarController *tabBar = (UITabBarController *)[[self window] rootViewController];
     tabBar.delegate = self;
+    
+    UITabBar *tabBarItself = tabBar.tabBar; //New
+    tabBarItself.hidden = YES; //New
 
     self.documentsViewController = (DocumentListViewController *)[tabBar.viewControllers[0] topViewController];
     FolderDocumentListViewModel *folderModel =

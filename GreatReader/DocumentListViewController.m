@@ -33,7 +33,7 @@ NSString * const DocumentListViewControllerSeguePDFDocument = @"DocumentListView
 {
     [super viewDidLoad];
 
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
     [self registerNibForCell];
 }
@@ -72,19 +72,19 @@ NSString * const DocumentListViewControllerSeguePDFDocument = @"DocumentListView
     [self setBarEditing:editing];
 
     if (editing) {
-        self.deleteItem =
-                [[UIBarButtonItem alloc] initWithTitle:LocalizedString(@".delete")
-                                                 style:UIBarButtonItemStylePlain
-                                                target:self
-                                                action:@selector(delete:)];
-        self.deleteItem.enabled = NO;
-        self.actionItem =
-                [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
-                                                              target:self
-                                                              action:@selector(performAction:)];
-        self.actionItem.enabled = NO;
-        [self.navigationItem setLeftBarButtonItems:@[self.deleteItem, self.actionItem]
-                                          animated:animated];
+//        self.deleteItem =
+//                [[UIBarButtonItem alloc] initWithTitle:LocalizedString(@".delete")
+//                                                 style:UIBarButtonItemStylePlain
+//                                                target:self
+//                                                action:@selector(delete:)];
+//        self.deleteItem.enabled = NO;
+//        self.actionItem =
+//                [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+//                                                              target:self
+//                                                              action:@selector(performAction:)];
+//        self.actionItem.enabled = NO;
+//        [self.navigationItem setLeftBarButtonItems:@[self.deleteItem, self.actionItem]
+//                                          animated:animated];
     } else {
         self.deleteItem = nil;
         self.actionItem = nil;
