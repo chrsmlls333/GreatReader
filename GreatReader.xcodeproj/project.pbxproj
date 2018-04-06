@@ -55,9 +55,7 @@
 		193ED26F197FC4BC00A5DC0D /* PDFDocument+TestAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 193ED26E197FC4BC00A5DC0D /* PDFDocument+TestAdditions.m */; };
 		194112381936B0A3008AD461 /* PDFDocumentStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 194112371936B0A3008AD461 /* PDFDocumentStore.m */; };
 		1941123B1936EA24008AD461 /* RootFolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1941123A1936EA24008AD461 /* RootFolder.m */; };
-		19430E4E18E7B3ED00BB4238 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19430E4D18E7B3ED00BB4238 /* Crashlytics.framework */; };
 		19430E5118E80A6F00BB4238 /* LibraryUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 19430E5018E80A6F00BB4238 /* LibraryUtils.m */; };
-		19430E5D18E8DCF100BB4238 /* API_KEY.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19430E5C18E8DCF100BB4238 /* API_KEY.plist */; };
 		1943EB57187FA59E00F0B61D /* PDFDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 1943EB56187FA59E00F0B61D /* PDFDocument.m */; };
 		195B728C18EA352E000C5A8B /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 195B728B18EA352E000C5A8B /* Device.m */; };
 		195B729518EDB1E0000C5A8B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 195B729318EDB0A7000C5A8B /* XCTest.framework */; };
@@ -225,6 +223,10 @@
 		19FE766D19BC334D00E64550 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 19FE766C19BC334D00E64550 /* Settings.bundle */; };
 		350F2A5FC18966E1CFAC6758 /* libPods-GreatReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAB6CC271C5CAFD581E46AD /* libPods-GreatReader.a */; };
 		37102BE6068A46217939D515 /* libPods-GreatReaderTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27D279B73EAD678B0883665B /* libPods-GreatReaderTests.a */; };
+		A2969F6C2076D15600812E22 /* DouglasFirPlywoodAssocLeisuretimehomesoffirplywood0001.PDF in Resources */ = {isa = PBXBuildFile; fileRef = A2969F692076D15600812E22 /* DouglasFirPlywoodAssocLeisuretimehomesoffirplywood0001.PDF */; };
+		A2969F6D2076D15600812E22 /* LeisureTimeLivingHomes.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A2969F6A2076D15600812E22 /* LeisureTimeLivingHomes.pdf */; };
+		A2969F6E2076D15600812E22 /* SecondHomesForLeisureLiving.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A2969F6B2076D15600812E22 /* SecondHomesForLeisureLiving.pdf */; };
+		A2969F722077EB7B00812E22 /* TimerUIApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = A2969F712077EB7B00812E22 /* TimerUIApplication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -289,7 +291,6 @@
 		19430E4D18E7B3ED00BB4238 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Libraries/Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		19430E4F18E80A6F00BB4238 /* LibraryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryUtils.h; sourceTree = "<group>"; };
 		19430E5018E80A6F00BB4238 /* LibraryUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LibraryUtils.m; sourceTree = "<group>"; };
-		19430E5C18E8DCF100BB4238 /* API_KEY.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = API_KEY.plist; sourceTree = SOURCE_ROOT; };
 		1943EB55187FA59E00F0B61D /* PDFDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFDocument.h; sourceTree = "<group>"; };
 		1943EB56187FA59E00F0B61D /* PDFDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFDocument.m; sourceTree = "<group>"; };
 		195B728A18EA352E000C5A8B /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
@@ -459,6 +460,11 @@
 		622332A5DAB01B4AFC1D7133 /* libPods-GreatReader-GreatReaderTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GreatReader-GreatReaderTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73CB178EB4AB4C2F036A3C2F /* Pods-GreatReader-GreatReaderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreatReader-GreatReaderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GreatReader-GreatReaderTests/Pods-GreatReader-GreatReaderTests.release.xcconfig"; sourceTree = "<group>"; };
 		9D7EAA7AFCE52826DAEF01F1 /* Pods-GreatReaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreatReaderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GreatReaderTests/Pods-GreatReaderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A2969F692076D15600812E22 /* DouglasFirPlywoodAssocLeisuretimehomesoffirplywood0001.PDF */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = DouglasFirPlywoodAssocLeisuretimehomesoffirplywood0001.PDF; sourceTree = "<group>"; };
+		A2969F6A2076D15600812E22 /* LeisureTimeLivingHomes.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = LeisureTimeLivingHomes.pdf; sourceTree = "<group>"; };
+		A2969F6B2076D15600812E22 /* SecondHomesForLeisureLiving.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = SecondHomesForLeisureLiving.pdf; sourceTree = "<group>"; };
+		A2969F702077EB7B00812E22 /* TimerUIApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerUIApplication.h; sourceTree = "<group>"; };
+		A2969F712077EB7B00812E22 /* TimerUIApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerUIApplication.m; sourceTree = "<group>"; };
 		D322ECC8B47DB19C1D04B827 /* Pods-GreatReader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreatReader.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GreatReader/Pods-GreatReader.debug.xcconfig"; sourceTree = "<group>"; };
 		DC0500FF02A2248E16F121E7 /* Pods-GreatReaderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GreatReaderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GreatReaderTests/Pods-GreatReaderTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -472,7 +478,6 @@
 				19D99DBA18827192006FDA6F /* QuartzCore.framework in Frameworks */,
 				19F7BA65186052E2009E8916 /* UIKit.framework in Frameworks */,
 				19F7BA67186052E2009E8916 /* Foundation.framework in Frameworks */,
-				19430E4E18E7B3ED00BB4238 /* Crashlytics.framework in Frameworks */,
 				19F7BA69186052E2009E8916 /* CoreGraphics.framework in Frameworks */,
 				350F2A5FC18966E1CFAC6758 /* libPods-GreatReader.a in Frameworks */,
 			);
@@ -749,8 +754,11 @@
 		19E525B2197E1D46005D0304 /* Startup */ = {
 			isa = PBXGroup;
 			children = (
+				19F7BA70186052E2009E8916 /* main.m */,
 				19F7BA73186052E2009E8916 /* AppDelegate.h */,
 				19F7BA74186052E2009E8916 /* AppDelegate.m */,
+				A2969F702077EB7B00812E22 /* TimerUIApplication.h */,
+				A2969F712077EB7B00812E22 /* TimerUIApplication.m */,
 			);
 			name = Startup;
 			sourceTree = "<group>";
@@ -883,11 +891,9 @@
 		19F7BA6B186052E2009E8916 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				19430E5C18E8DCF100BB4238 /* API_KEY.plist */,
 				19F7BA6C186052E2009E8916 /* GreatReader-Info.plist */,
 				19F7BA6D186052E2009E8916 /* InfoPlist.strings */,
 				199610F419AFFC5200A0786F /* Localizable.strings */,
-				19F7BA70186052E2009E8916 /* main.m */,
 				19F7BA72186052E2009E8916 /* GreatReader-Prefix.pch */,
 				19F7BA76186052E2009E8916 /* Default.png */,
 				19F7BA78186052E2009E8916 /* Default@2x.png */,
@@ -937,6 +943,9 @@
 		19FE766519BC302C00E64550 /* SamplePDF */ = {
 			isa = PBXGroup;
 			children = (
+				A2969F692076D15600812E22 /* DouglasFirPlywoodAssocLeisuretimehomesoffirplywood0001.PDF */,
+				A2969F6A2076D15600812E22 /* LeisureTimeLivingHomes.pdf */,
+				A2969F6B2076D15600812E22 /* SecondHomesForLeisureLiving.pdf */,
 				19FE766619BC303E00E64550 /* Pride and Prejudice.pdf */,
 				19FE766719BC303E00E64550 /* The Adventres of Sherlock Holmes.pdf */,
 			);
@@ -963,14 +972,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19F7BA9C186052E2009E8916 /* Build configuration list for PBXNativeTarget "GreatReader" */;
 			buildPhases = (
+				538694721397EF8DD9DCC890 /* [CP] Check Pods Manifest.lock */,
 				B90DBE927FA4794E5248104C /* 📦 Check Pods Manifest.lock */,
 				191B7D2B19681379004B35CA /* ShellScript */,
 				19F7BA5D186052E2009E8916 /* Sources */,
 				19F7BA5E186052E2009E8916 /* Frameworks */,
 				19F7BA5F186052E2009E8916 /* Resources */,
 				19430E4918E7B2B800BB4238 /* ShellScript */,
-				0A6863B2F611C4270C15EA97 /* 📦 Embed Pods Frameworks */,
-				607005BA149D9AF251BB0EFE /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -985,13 +993,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19F7BA9F186052E2009E8916 /* Build configuration list for PBXNativeTarget "GreatReaderTests" */;
 			buildPhases = (
+				06F301F37F8ED48BD1D742EE /* [CP] Check Pods Manifest.lock */,
 				CFAE8C05352FA5A22744CE39 /* 📦 Check Pods Manifest.lock */,
 				19F7BA85186052E2009E8916 /* Sources */,
 				19F7BA86186052E2009E8916 /* Frameworks */,
 				19F7BA87186052E2009E8916 /* Resources */,
 				19F7BA88186052E2009E8916 /* ShellScript */,
-				807EF875B7F37D19CF7745A7 /* 📦 Embed Pods Frameworks */,
-				87BC50443177DAE57BEB08EA /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1012,6 +1019,11 @@
 				LastTestingUpgradeCheck = 0510;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "MIYAMOTO Shohei";
+				TargetAttributes = {
+					19F7BA60186052E2009E8916 = {
+						DevelopmentTeam = R79RN74ZBP;
+					};
+				};
 			};
 			buildConfigurationList = 19F7BA5C186052E2009E8916 /* Build configuration list for PBXProject "GreatReader" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1042,7 +1054,7 @@
 				19F7BA77186052E2009E8916 /* Default.png in Resources */,
 				1994B07E195C44220021B08C /* Documents@2x.png in Resources */,
 				19C961621900A4DE00D1857C /* Brightness@2x.png in Resources */,
-				19430E5D18E8DCF100BB4238 /* API_KEY.plist in Resources */,
+				A2969F6D2076D15600812E22 /* LeisureTimeLivingHomes.pdf in Resources */,
 				19F7BA79186052E2009E8916 /* Default@2x.png in Resources */,
 				19F7BA7B186052E2009E8916 /* Default-568h@2x.png in Resources */,
 				1994B07B195C366D0021B08C /* Home@2x.png in Resources */,
@@ -1056,9 +1068,11 @@
 				191B7D4A196925ED004B35CA /* DocumentCollectionViewCell_iPad.xib in Resources */,
 				191B7D46196925DB004B35CA /* DocumentCollectionViewCell_iPhone.xib in Resources */,
 				19ABA5C318D6701200E123AB /* RibbonOff@2x.png in Resources */,
+				A2969F6C2076D15600812E22 /* DouglasFirPlywoodAssocLeisuretimehomesoffirplywood0001.PDF in Resources */,
 				191B7D56196957A2004B35CA /* DocumentTableViewCell.xib in Resources */,
 				19C9616A1905E6E400D1857C /* CropBoth@2x.png in Resources */,
 				19FE766819BC303E00E64550 /* Pride and Prejudice.pdf in Resources */,
+				A2969F6E2076D15600812E22 /* SecondHomesForLeisureLiving.pdf in Resources */,
 				19C9616B1905E6E400D1857C /* CropEven@2x.png in Resources */,
 				199ABC1D19754E5F00FAC2C1 /* Check@2x.png in Resources */,
 				19FE766A19BC303E00E64550 /* The Adventres of Sherlock Holmes.pdf in Resources */,
@@ -1103,19 +1117,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0A6863B2F611C4270C15EA97 /* 📦 Embed Pods Frameworks */ = {
+		06F301F37F8ED48BD1D742EE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GreatReaderTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GreatReader/Pods-GreatReader-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		191B7D2B19681379004B35CA /* ShellScript */ = {
@@ -1157,49 +1174,22 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
-		607005BA149D9AF251BB0EFE /* 📦 Copy Pods Resources */ = {
+		538694721397EF8DD9DCC890 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GreatReader-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GreatReader/Pods-GreatReader-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		807EF875B7F37D19CF7745A7 /* 📦 Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GreatReaderTests/Pods-GreatReaderTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		87BC50443177DAE57BEB08EA /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GreatReaderTests/Pods-GreatReaderTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B90DBE927FA4794E5248104C /* 📦 Check Pods Manifest.lock */ = {
@@ -1275,6 +1265,7 @@
 				19D12BCC18C74192001C2066 /* PDFFontCollection.m in Sources */,
 				19CA78A418AF12E600200362 /* PDFDocumentPageSlider.m in Sources */,
 				1997502318CE904C008D514B /* PDFFontDescriptor.m in Sources */,
+				A2969F722077EB7B00812E22 /* TimerUIApplication.m in Sources */,
 				19D99E05188CDC60006FDA6F /* PDFDocumentOutlineViewController.m in Sources */,
 				19D12BC418C318C5001C2066 /* PDFText.m in Sources */,
 				19D12BC718C319E5001C2066 /* PDFTextState.m in Sources */,
@@ -1775,7 +1766,9 @@
 			baseConfigurationReference = D322ECC8B47DB19C1D04B827 /* Pods-GreatReader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = R79RN74ZBP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GreatReader",
@@ -1783,11 +1776,13 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GreatReader/GreatReader-Prefix.pch";
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = "GreatReader/GreatReader-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vanartgallery.GreatReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1797,6 +1792,8 @@
 			baseConfigurationReference = 253DDC32AAC4C1563A719EB8 /* Pods-GreatReader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = R79RN74ZBP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GreatReader",
@@ -1804,11 +1801,13 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GreatReader/GreatReader-Prefix.pch";
-				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = "GreatReader/GreatReader-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_CFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vanartgallery.GreatReader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

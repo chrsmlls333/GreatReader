@@ -8,15 +8,15 @@
 
 #import "LibraryUtils.h"
 
-BOOL CrashlyticsEnabled()
-{
-    return GetCrashlyticsAPIKey().length > 0;
-}
-
-NSString * GetCrashlyticsAPIKey()
-{
-    NSString *path = [NSBundle.mainBundle pathForResource:@"API_KEY"
-                                                   ofType:@"plist"];
-    NSDictionary *keys = [NSDictionary dictionaryWithContentsOfFile:path];
-    return keys[@"CRASHLYTICS_API_KEY1"];
-}
+//BOOL CrashlyticsEnabled()
+//{
+//    return GetCrashlyticsAPIKey().length > 0;
+//}
+//
+//NSString * GetCrashlyticsAPIKey()
+//{
+//    NSString *path = [NSBundle.mainBundle pathForResource:@"API_KEY"
+//                                                   ofType:@"plist"];
+//    NSDictionary *keys = [NSDictionary dictionaryWithContentsOfFile:path];
+//    return keys[@"CRASHLYTICS_API_KEY1"];
+//}

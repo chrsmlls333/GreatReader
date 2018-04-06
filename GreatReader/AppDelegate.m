@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 
-#import <Crashlytics/Crashlytics.h>
+//#import <Crashlytics/Crashlytics.h>
 
 #import "DocumentListViewController.h"
 #import "Folder.h"
@@ -44,9 +44,9 @@ static NSString * const LastAppVersion = @"LastAppVersion";
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    if (CrashlyticsEnabled()) {
-        [Crashlytics startWithAPIKey:GetCrashlyticsAPIKey()];
-    }
+//    if (CrashlyticsEnabled()) {
+//        [Crashlytics startWithAPIKey:GetCrashlyticsAPIKey()];
+//    }
 
     [self migrateIfNeeded];
 
