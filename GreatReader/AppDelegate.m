@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TimerUIApplication.h"
 
 //#import <Crashlytics/Crashlytics.h>
 
@@ -69,6 +70,7 @@ static NSString * const LastAppVersion = @"LastAppVersion";
     RecentDocumentListViewModel *recentModel =
             [[RecentDocumentListViewModel alloc] initWithDocumentList:self.documentStore.documentList];
     self.recentViewController.viewModel = recentModel;
+    
 
     NSURL *URL = [launchOptions objectForKey:UIApplicationLaunchOptionsURLKey];
     if (URL) {
@@ -78,7 +80,27 @@ static NSString * const LastAppVersion = @"LastAppVersion";
     return YES;
 }
 
-- (BOOL)application:(UIApplication *)application shouldRestoreApplicationState:(NSCoder *)coder
+-(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions //NEW
+{
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidTimeout:) name:kApplicationDidTimeoutNotification object:nil];
+    
+    return YES;
+}
+
+-(void)applicationDidTimeout:(NSNotification *) notif //NEW
+{
+    NSLog (@"timer exceeded!!");
+    [self.window.rootViewController dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void) gotoRoot {
+    UINavigationController *myNavCon = (UINavigationController*)self.window.rootViewController;
+    [myNavCon popToRootViewControllerAnimated:NO];
+
+}
+
+- (BOOL)application:(UIApplication *)application
+shouldRestoreApplicationState:(NSCoder *)coder
 {
     return !self.launchingWithURL;
 }
@@ -106,7 +128,10 @@ viewControllerWithRestorationIdentifierPath:(NSArray *)identifierComponents
     return nil;
 }
 						
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation 
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
 {
     NSString *fileName = [url lastPathComponent];
     NSURL *dirURL = [[url URLByDeletingLastPathComponent] URLByDeletingLastPathComponent];
