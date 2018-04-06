@@ -228,11 +228,11 @@ willTransitionToViewControllers:(NSArray *)pendingViewControllers
 
 - (void)prepareNavigationBar
 {
-    UIBarButtonItem *ribbon = self.document.currentPageBookmarked
-            ? self.ribbonOnItem : self.ribbonOffItem;
+//    UIBarButtonItem *ribbon = self.document.currentPageBookmarked
+//            ? self.ribbonOnItem : self.ribbonOffItem;
 
     self.rightBarButtonToolbar = ({
-        UIToolbar *bar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 230, 44)];
+        UIToolbar *bar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 230, 44)]; //230, 44
         bar.clipsToBounds = YES;
         [bar setBackgroundImage:[UIImage new]
               forToolbarPosition:UIBarPositionAny
@@ -242,22 +242,23 @@ willTransitionToViewControllers:(NSArray *)pendingViewControllers
         UIBarButtonItem *s = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
                                                                            target:nil
                                                                            action:nil];
-        [bar setItems:@[self.historyItem, s,
-                        self.outlineItem, s,
-                        self.cropItem, s,
-                        self.brightnessItem, s,                        
-                        self.findItem, s,
-                        ribbon]
-             animated:NO];
+//        [bar setItems:@[self.historyItem, s,
+//                        self.outlineItem, s,
+//                        self.cropItem, s,
+//                        self.brightnessItem, s,                        
+//                        self.findItem, s,
+//                        ribbon]
+//             animated:NO];
+        [bar setItems:@[s, self.brightnessItem] animated:NO];
         bar;
     });
 
-    UIBarButtonItem *space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
-                                                                           target:nil
-                                                                           action:nil];
-    space.width = -20;
+//    UIBarButtonItem *space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace
+//                                                                           target:nil
+//                                                                           action:nil];
+//    space.width = -20;
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:self.rightBarButtonToolbar];
-    self.navigationItem.rightBarButtonItems = @[space, rightItem];
+    self.navigationItem.rightBarButtonItems = @[rightItem]; //space, rightItem
 
     UIBarButtonItem *leftItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Home.png"]
                                                                  style:UIBarButtonItemStylePlain
@@ -289,7 +290,9 @@ willTransitionToViewControllers:(NSArray *)pendingViewControllers
 
 #pragma mark -
 
-- (void)goAtIndex:(NSUInteger)index addHistory:(BOOL)addHistory animated:(BOOL)animated
+- (void)goAtIndex:(NSUInteger)index
+       addHistory:(BOOL)addHistory
+         animated:(BOOL)animated
 {
     UIPageViewControllerNavigationDirection direction = UIPageViewControllerNavigationDirectionForward;
     NSArray *viewControllers = @[[self pageViewControllerAtIndex:index]];
@@ -311,7 +314,8 @@ willTransitionToViewControllers:(NSArray *)pendingViewControllers
     [self.infoView showAndHide];
 }
 
-- (void)goAtIndex:(NSUInteger)index animated:(BOOL)animated
+- (void)goAtIndex:(NSUInteger)index
+         animated:(BOOL)animated
 {
     [self goAtIndex:index addHistory:YES animated:animated];
 }

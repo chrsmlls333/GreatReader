@@ -58,7 +58,7 @@
 
 - (void)awakeFromNib
 {
-    self.knobView = [[PDFDocumentPageSliderKnobView alloc] initWithFrame:CGRectMake(0, 0, 10, 10)];
+    self.knobView = [[PDFDocumentPageSliderKnobView alloc] initWithFrame:CGRectMake(0, 0, 15, 15)];
     [self addSubview:self.knobView];
 
     self.backButton = [UIButton buttonWithType:UIButtonTypeSystem];
@@ -68,7 +68,7 @@
                         action:@selector(goBack:)
               forControlEvents:UIControlEventTouchUpInside];
     [self.backButton sizeToFit];
-    [self addSubview:self.backButton];
+    //[self addSubview:self.backButton];
 
     self.forwardButton = [UIButton buttonWithType:UIButtonTypeSystem];
     [self.forwardButton setImage:[UIImage imageNamed:@"Forward.png"]
@@ -77,7 +77,7 @@
                         action:@selector(goForward:)
               forControlEvents:UIControlEventTouchUpInside];    
     [self.forwardButton sizeToFit];
-    [self addSubview:self.forwardButton];
+    //[self addSubview:self.forwardButton];
 }
 
 #pragma mark -
@@ -135,7 +135,7 @@
 
 - (CGSize)knobSize
 {
-    return CGSizeMake(24, 32);
+    return CGSizeMake(24, 32); //24 32
 }
 
 #pragma mark -
